@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prior-sensitivity-lab"
+version = "0.1.0"
+description = "Bayesian Prior Sensitivity Analysis Toolkit"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
